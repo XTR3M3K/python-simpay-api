@@ -119,7 +119,8 @@ class DirectBilling:
         return r.json()
 
     # https://docs.simpay.pl/#lista-ip-serwerow-simpay
-    def get_servers_ip(self):
+    @staticmethod
+    def get_servers_ip():
         r = requests.get(DirectBilling.GET_IP_URL)
 
         return r.json()
