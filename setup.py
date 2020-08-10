@@ -10,7 +10,7 @@ setup(
 
     url='https://github.org/XTR3M3K/python-simpay-api',
 
-    packages=find_packages(),
+    packages=['payments'],
     install_required=[
         'requests'
     ]
