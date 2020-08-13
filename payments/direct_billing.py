@@ -11,7 +11,7 @@ class DirectBilling:
         self.service_id = service_id
 
     @staticmethod
-    def __format_number(num):
+    def format_number(num):
         try:
             dec = decimal.Decimal(num)
         except[]:
@@ -47,7 +47,7 @@ class DirectBilling:
         if request.get("amount_required") is not None:
             amount = request["amount_required"]
 
-        amount = self.__format_number(amount)
+        amount = self.format_number(amount)
 
         request["sign"] = hashlib.new('sha256',
                                       bytes(
