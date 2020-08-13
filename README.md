@@ -1,4 +1,4 @@
-# kotlin-simpay-api
+# python-simpay-api
 
 ## SMS
 ### Weryfikacja kodu
